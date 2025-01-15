@@ -1,0 +1,211 @@
+@font-face {
+    font-family:"Avenir Roman";
+    src: url("avenir-roman.ttf") format("truetype");
+}
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+}
+
+body {
+    background-color: var(--branco-principal);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    background-image: url("assets/bg.jpg"); 
+    background-size: cover;   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Avenir Roman", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #f9f9f9;
+    background: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #f9f9f9;
+    color: #000;
+}
+
+img.franquias {
+    max-width: 600px;
+    position: absolute;
+    bottom: 25px;
+}
+
+img.logo {
+    max-width: 160px;
+}
+
+.hero-content {
+    margin-top: -21px;
+    padding-left: 80px;
+}
+
+.hero-content > p {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(192, 192, 192, 0.8);
+    margin-top: 16px;
+}
+
+h1 {
+    font-size: 43px;
+    line-height: 53px;
+    color: #f9f9f9;
+    margin: 20px 0 30px 0;    
+}
+
+.precos-container {
+    display: flex;
+}
+
+.preco span {
+    font-weight: 700px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #f9f9f9;
+}
+
+.preco {
+    width: 300px;
+    max-width: 100%;
+    color: rgba(192, 192, 192, 0.8);   
+}
+
+.preco:first-child {
+    display: grid;
+}
+
+.preco:first-child a {
+    align-self: end;
+}
+
+.preco a {
+    padding: 16.5px 14px;
+    background: #0063e5;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    color: #f9f9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+.preco a:hover {
+    background: #0483ee;
+}
+
+.preco p:first-child {
+    margin: 0;
+}
+
+.preco p {
+    margin: 16px 0;
+}
+
+.preco + .preco {
+    margin-left: 32px;
+}
+
+.secundario__imagem {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.secundario {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.descricao__titulo, .descricao__texto {
+    font-family: "Avenir Roman", sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.descricao__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.descricao__texto {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.rodape__logo {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.rodape__texto {
+    margin: 10px auto;
+    max-width: 800px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Avenir Roman", sans-serif;
+}
